@@ -1,722 +1,426 @@
-export const Cards = [
+import { Card } from "../types/game-types";
+
+export const Cards: (Omit<Card, "id"> & { count: number })[] = [
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby0",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby1",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby2",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby3",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby4",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby5",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby6",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby7",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby8",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby9",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby10",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Unicorn",
+    name: "Baby Unicorn",
     type: "baby",
     image: "baby11",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Baby Narwhal",
+    name: "Baby Narwhal",
     type: "baby",
     image: "baby12",
     count: 1,
-    on: [],
-    description: {
-      en: "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
-      de: "Wenn diese Karte geopfert, zerstört oder zurück auf die Hand gelegt wird, lege sie in die Kita stattdessen.",
-    },
+    description:
+      "If this card would be sacrificed, destroyed, or returned to your hand, return it to the Nursery instead.",
   },
   {
-    title: "Alluring Narwhal",
+    name: "Alluring Narwhal",
     type: "narwhal",
     image: "alluring_narwhal",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "steal",
-                      info: { type: "upgrade" },
-                    },
-                    ui: {
-                      type: "card_to_card",
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "steal",
+          from: "player",
+          count: 1,
+          type: "upgrade",
+          optional: true,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may STEAL an Upgrade card.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Upgradekarte stehlen.",
+      ],
+      trigger: "enter",
     },
+    description:
+      "When this card enters your Stable, you may STEAL an Upgrade card.",
   },
   {
-    title: "Americorn",
+    name: "Americorn",
     type: "unicorn",
     image: "americorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "pullRandom",
-                    },
-                    ui: { type: "card_to_player" },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "draw",
+          from: "player",
+          count: 1,
+          optional: true,
+          to: "hand",
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may pull a card at random from another player's hand.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine zufällige Karte aus der Hand eines Mitspieler stehlen.",
+      ],
+      trigger: "enter",
     },
+    description:
+      "When this card enters your Stable, you may pull a card at random from another player's hand.",
   },
   {
-    title: "Annoying Flying Unicorn",
+    name: "Annoying Flying Unicorn",
     type: "unicorn",
     image: "annoying_flying_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "makeSomeoneDiscard",
-                    },
-                    ui: { type: "card_to_player" },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "discard",
+          from: "player",
+          count: 1,
+          optional: true,
         },
-      },
-      {
-        trigger: "this_destroyed_or_sacrificed",
-        do: {
-          type: "return_to_hand",
-        },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may force another player to DISCARD a card. 👼 If this card is sacrificed or destroyed, return it to your hand.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du einen Mitspieler auswählen. Dieser Mitspieler muss eine Karte abwerfen. 👼 Wenn diese Karte geopfert oder zerstört wird, kommt sie stattdessen auf deine Hand zurück.",
+      ],
+      trigger: "enter",
     },
+    description:
+      "When this card enters your Stable, you may force another player to DISCARD a card. 👼 If this card is sacrificed or destroyed, return it to your hand.",
   },
   {
-    title: "Chainsaw Unicorn",
+    name: "Chainsaw Unicorn",
     type: "unicorn",
     image: "chainsaw_unicorn",
     count: 2,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                // when there are two instructions for the same protagonist, the protagonist must execute exactly one instruction before the game may advance
-                // in this case the protagonist may destroy an upgrade card or sacrifice a downgrade card
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "destroy",
-                      info: { type: "my_downgrade_other_upgrade" },
-                    },
-                    ui: { type: "card_to_card" },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "destroy",
+          from: "player",
+          count: 1,
+          type: "upgrade",
+          optional: true,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may DESTROY an Upgrade card or SACRIFICE a Downgrade card.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Upgradekarte oder eine Downgradekarte opfern.",
+        {
+          action: "sacrifice",
+          count: 1,
+          from: "active_player",
+          optional: true,
+        },
+      ],
+      trigger: "enter",
+      choose_one_action: true,
     },
+    description:
+      "When this card enters your Stable, you may DESTROY an Upgrade card or SACRIFICE a Downgrade card.", // todo
   },
   {
-    title: "Classy Narwhal",
+    name: "Classy Narwhal",
     type: "narwhal",
     image: "classy_narwhal",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "search",
-                      info: { type: "upgrade" },
-                    },
-                    ui: {
-                      type: "single_action_popup",
-                      info: { singleActionText: "search" },
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "search",
+          from: "deck",
+          to: "hand",
+          count: 1,
+          type: "upgrade",
+          optional: true,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may search the deck for an Upgrade card and add it to your hand, then shuffle the deck.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du im Deck nach einer Upgradekarte suchen und sie deiner Hand hinzufügen.",
+      ],
+      trigger: "enter",
     },
+    description:
+      "When this card enters your Stable, you may search the deck for an Upgrade card and add it to your hand, then shuffle the deck.",
   },
   {
-    title: "Dark Angel Unicorn",
+    name: "Dark Angel Unicorn",
     type: "unicorn",
     image: "dark_angel_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            // typical action chain: sacrifice to revive
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "sacrifice",
-                      info: { type: "unicorn" },
-                    },
-                    ui: { type: "card_to_card" },
-                  },
-                ],
-              },
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "revive",
-                      info: { type: "unicorn" },
-                    },
-                    ui: {
-                      type: "single_action_popup",
-                      info: { singleActionText: "Revive" },
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      actions: [
+        {
+          action: "sacrifice",
+          count: 1,
+          from: "active_player",
+          optional: true,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may SACRIFICE a Unicorn card, then bring a Unicorn card from the discard pile into your Stable.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Einhornkarte 🦄 opfern. Du darfst dann ein Einhorn aus dem Friedhof in deinen Stall legen.",
+        {
+          action: "draw",
+          from: "discard_pile",
+          to: "stable",
+          count: 1,
+          optional: true,
+        },
+      ],
+      trigger: "enter",
     },
-  } /*, {
-    title: "Extremely Destructive Unicorn",
+    description:
+      "When this card enters your Stable, you may SACRIFICE a Unicorn card, then bring a Unicorn card from the discard pile into your Stable.",
+  },
+  {
+    name: "Extremely Destructive Unicorn",
     type: "unicorn",
     image: "extremely_destructive_unicorn",
     count: 1,
-    on: [{
-        trigger: "enter",
-        do: {
-            type: "add_scene",
-            info: {
-                actions: [{
-                    instructions: [{
-                        protagonist: "all",
-                        do: {
-                            key: "sacrifice",
-                            info: { type: "unicorn" }
-                        },
-                        ui: { type: "click_on_card_in_stable" }
-                    }]
-                }],
-                mandatory: true,
-                endTurnImmediately: false
-            }
-        }
-    }],
-    description: {
-        en: "When this card enters your Stable, each player (including you) must SACRIFICE a Unicorn card.",
-        de: "Wenn diese Karte deinen Stall betritt, muss jeder Spieler (auch du) ein Einhorn opfern."
-    }
-}*/,
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "sacrifice",
+          count: 1,
+          from: "all_players",
+          optional: false,
+        },
+      ],
+    },
+    description:
+      "When this card enters your Stable, each player (including you) must SACRIFICE a Unicorn card.",
+  },
   {
-    title: "Ginormous Unicorn",
+    name: "Ginormous Unicorn",
     type: "unicorn",
     image: "ginormous_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_effect",
-          info: { key: "you_cannot_play_neigh" },
-          ui: { type: "none" },
-        },
-      },
-      {
-        trigger: "enter",
-        do: {
-          type: "add_effect",
-          info: { key: "count_as_two" },
-          ui: { type: "none" },
-        },
-      },
-    ],
-    description: {
-      en: "This card counts for 2 Unicorns. You cannot play any Neigh cards.",
-      de: "Diese Karte zählt als zwei Einhörner. Du kannst keine Neigh Karten spielen, solange diese Karte in deinem Stall ist.",
+    effect: {
+      trigger: "passive",
+      actions: [],
     },
+    description:
+      "This card counts for 2 Unicorns. You cannot play any Neigh cards.",
   },
   {
-    title: "Greedy Flying Unicorn",
+    name: "Greedy Flying Unicorn",
     type: "unicorn",
     image: "greedy_flying_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "draw",
-                      info: {
-                        count: 1,
-                      },
-                    },
-                    ui: { type: "click_on_drawPile" },
-                  },
-                ],
-              },
-            ],
-            mandatory: true,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "draw",
+          count: 1,
+          from: "deck",
+          optional: false,
+          to: "hand",
         },
-      },
-      {
-        trigger: "this_destroyed_or_sacrificed",
-        do: {
-          type: "return_to_hand",
-        },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, DRAW a card. If this card is sacrificed or destroyed, return it to your hand.",
-      de: "Wenn diese Karte deinen Stall betritt, ziehe eine Karte. 👼 Wenn diese Karte geopfert oder zerstört wird, kommt sie stattdessen auf deine Hand zurück.",
+      ],
     },
+    description:
+      "When this card enters your Stable, DRAW a card. If this card is sacrificed or destroyed, return it to your hand.",
   },
   {
-    title: "Llamacorn",
+    name: "Llamacorn",
     type: "unicorn",
     image: "llamacorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "all",
-                    do: {
-                      key: "discard",
-                      info: { count: 1, type: "any" },
-                    },
-                    ui: {
-                      type: "click_on_own_card_in_hand",
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: true,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "discard",
+          count: 1,
+          from: "all_players",
+          optional: false,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, each player (including you) must DISCARD a card.",
-      de: "Wenn diese Karte deinen Stall betritt, muss jeder Spieler (auch du) eine Karte abwerfen",
+      ],
     },
+    description:
+      "When this card enters your Stable, each player (including you) must DISCARD a card.",
   },
   {
-    title: "Magical Flying Unicorn",
+    name: "Magical Flying Unicorn",
     type: "unicorn",
     image: "magical_flying_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "addFromDiscardPileToHand",
-                      info: { type: "magic" },
-                    },
-                    ui: {
-                      type: "single_action_popup",
-                      info: { singleActionText: "Add magic card" },
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "draw",
+          count: 1,
+          from: "discard_pile",
+          optional: true,
+          to: "hand",
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may add a Magic card from the discard pile to your hand.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Magiekarte aus dem Friedhof deiner Hand hinzufügen.",
+      ],
     },
+    description:
+      "When this card enters your Stable, you may add a Magic card from the discard pile to your hand.",
   },
   {
-    title: "Magical Kittencorn",
+    name: "Magical Kittencorn",
     type: "unicorn",
     image: "magical_kittencorn",
     count: 1,
-    passive: ["cannot_be_destroyed_by_magic"],
-    description: {
-      en: "This card cannot be destroyed by Magic cards.",
-      de: "Diese Karte kann nicht von Magiekarten zerstört werden",
+    effect: {
+      trigger: "passive",
+      actions: [],
     },
+    description: "This card cannot be destroyed by Magic cards.",
   },
   {
-    title: "Majestic Flying Unicorn",
+    name: "Majestic Flying Unicorn",
     type: "unicorn",
     image: "majestic_flying_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "addFromDiscardPileToHand",
-                      info: { type: "unicorn" },
-                    },
-                    ui: {
-                      type: "single_action_popup",
-                      info: { singleActionText: "Add card from discard pile" },
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "draw",
+          count: 1,
+          from: "discard_pile",
+          optional: false,
+          type: "unicorn",
+          to: "hand",
         },
-      },
-      {
-        trigger: "this_destroyed_or_sacrificed",
-        do: {
-          type: "return_to_hand",
-        },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may add a Unicorn card from the discard pile to your hand. If this card is sacrificed or destroyed, return it to your hand.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du ein Einhorn aus dem Friedhof deiner Hand hinzufügen. 👼 Wenn diese Karte geopfert oder zerstört wird, kommt sie stattdessen auf deine Hand zurück.",
+      ],
     },
+    description:
+      "When this card enters your Stable, you may add a Unicorn card from the discard pile to your hand. If this card is sacrificed or destroyed, return it to your hand.",
   },
   {
-    title: "Mother Goose Unicorn",
+    name: "Mother Goose Unicorn",
     type: "unicorn",
     image: "mother_goose_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "reviveFromNursery",
-                    },
-                    ui: {
-                      type: "single_action_popup",
-                      info: { singleActionText: "Revive Baby Unicorn" },
-                    },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "draw",
+          count: 1,
+          from: "nusery",
+          optional: false,
+          to: "stable",
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, you may bring a Baby Unicorn card from the Nursery into your Stable.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du ein Babyeinhorn aus der Kita adoptieren und es deinem Stall hinzufügen.",
+      ],
     },
+    description:
+      "When this card enters your Stable, you may bring a Baby Unicorn card from the Nursery into your Stable.",
   },
   {
-    title: "Mermaid Unicorn",
+    name: "Mermaid Unicorn",
     type: "unicorn",
     image: "mermaid_unicorn",
     count: 1,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "add_scene",
-          info: {
-            actions: [
-              {
-                instructions: [
-                  {
-                    protagonist: "owner",
-                    do: {
-                      key: "returnToHand",
-                      info: { who: "another" },
-                    },
-                    ui: { type: "card_to_card" },
-                  },
-                ],
-              },
-            ],
-            mandatory: false,
-            endTurnImmediately: false,
-          },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "return",
+          from: "player",
+          optional: false,
+          count: 1,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, return a card in another player's Stable to their hand.",
-      de: "Wenn diese Karte deinen Stall betritt, wähle eine Karte aus. Diese Karte wird zurück auf die Hand geschickt.",
+      ],
     },
+    description:
+      "When this card enters your Stable, return a card in another player's Stable to their hand.",
   },
   {
-    title: "Narwhal Torpedo",
+    name: "Narwhal Torpedo",
     type: "unicorn",
     image: "narwhal_torpedo",
     count: 2,
-    on: [
-      {
-        trigger: "enter",
-        do: {
-          type: "auto",
-          info: {
-            key: "sacrifice_all_downgrades",
-          },
-          ui: { type: "none" },
+    effect: {
+      trigger: "enter",
+      actions: [
+        {
+          action: "sacrifice",
+          count: Infinity,
+          from: "active_player",
+          type: "downgrade",
+          optional: false,
         },
-      },
-    ],
-    description: {
-      en: "When this card enters your Stable, SACRIFICE all Downgrade cards in your Stable.",
-      de: "Wenn diese Karte deinen Stall betritt, opfere alle Downgradekarten in deinem Stall.",
+      ],
     },
+    description:
+      "When this card enters your Stable, SACRIFICE all Downgrade cards in your Stable.",
   },
   {
-    title: "Necromancer Unicorn",
+    name: "Necromancer Unicorn",
     type: "unicorn",
     image: "necromancer_unicorn",
     count: 1,
@@ -764,13 +468,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may DISCARD 2 Unicorn cards, then bring a Unicorn card from the discard pile into your Stable.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du zwei Einhörner aus deiner Hand abwerfen. Belebe ein Einhorn aus dem Friedhof wieder und füge das Einhorn deinem Stall hinzu.",
-    },
+    description:
+      "When this card enters your Stable, you may DISCARD 2 Unicorn cards, then bring a Unicorn card from the discard pile into your Stable.",
   },
   {
-    title: "Queen Bee Unicorn",
+    name: "Queen Bee Unicorn",
     type: "unicorn",
     image: "queen_bee_unicorn",
     count: 1,
@@ -784,13 +486,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Basic Unicorn cards cannot enter any player's Stable except yours.",
-      de: "Basic Einhörner können keinen Stall mehr betreten außer dein Stall.",
-    },
+    description:
+      "Basic Unicorn cards cannot enter any player's Stable except yours.",
   },
   {
-    title: "Rainbow Unicorn",
+    name: "Rainbow Unicorn",
     type: "unicorn",
     image: "rainbow_unicorn",
     count: 1,
@@ -825,13 +525,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may bring a Basic Unicorn card from your hand into your Stable.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du ein Basic Einhorn von deiner Hand in dein Stall bringen.",
-    },
+    description:
+      "When this card enters your Stable, you may bring a Basic Unicorn card from your hand into your Stable.",
   },
   {
-    title: "Rhinocorn",
+    name: "Rhinocorn",
     type: "unicorn",
     image: "rhinocorn",
     count: 1,
@@ -863,13 +561,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DESTROY a Unicorn card. If you do, immediately end your turn.",
-      de: "Ist diese Karte am Anfang deiner Runde in deinem Stall, darfst du ein Einhorn zerstören. Du musst danach dein Zug sofort beenden.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DESTROY a Unicorn card. If you do, immediately end your turn.",
   },
   {
-    title: "Seductive Unicorn",
+    name: "Seductive Unicorn",
     type: "unicorn",
     image: "seductive_unicorn",
     count: 1,
@@ -914,13 +610,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may DISCARD a card, then STEAL a Unicorn card.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Karte von deiner Hand abwerfen, um ein Einhorn zu stehlen.",
-    },
+    description:
+      "When this card enters your Stable, you may DISCARD a card, then STEAL a Unicorn card.",
   },
   {
-    title: "Shabby the Narwhal",
+    name: "Shabby the Narwhal",
     type: "narwhal",
     image: "shabby_the_narwhal",
     count: 1,
@@ -953,13 +647,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may search the deck for a Downgrade card and add it to your hand, then shuffle the deck.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du nach einer Downgradekarte im Deck suchen und sie deiner Hand hinzufügen.",
-    },
+    description:
+      "When this card enters your Stable, you may search the deck for a Downgrade card and add it to your hand, then shuffle the deck.",
   },
   {
-    title: "Vagabond Unicorn",
+    name: "Vagabond Unicorn",
     type: "unicorn",
     image: "vagabond_unicorn",
     count: 1,
@@ -1003,13 +695,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this is in your Stable at the beginning of your turn, you may DISCARD a card, then pull a card at random from another player's hand.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du eine Karte abwerfen, um eine zufällige Handkarte eines Spielers stehlen.",
-    },
+    description:
+      "If this is in your Stable at the beginning of your turn, you may DISCARD a card, then pull a card at random from another player's hand.",
   },
   {
-    title: "Survivalist Unicorn",
+    name: "Survivalist Unicorn",
     type: "unicorn",
     image: "survivalist_unicorn",
     count: 1,
@@ -1054,13 +744,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DISCARD a card, then SACRIFICE a Downgrade card.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du eine Karte von deiner Hand abwerfen, um eine Downgradekarte zu opfern.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DISCARD a card, then SACRIFICE a Downgrade card.",
   },
   {
-    title: "Zombie Unicorn",
+    name: "Zombie Unicorn",
     type: "unicorn",
     image: "zombie",
     count: 1,
@@ -1108,13 +796,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DISCARD a Unicorn card. If you do, choose a Unicorn card from the discard pile and bring it directly into your Stable.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du ein Einhorn von deiner Hand abwerfen. Belebe ein Einhorn vom Friedhof wieder und lege es in deinem Stall.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DISCARD a Unicorn card. If you do, choose a Unicorn card from the discard pile and bring it directly into your Stable.",
   },
   {
-    title: "Swift Flying Unicorn",
+    name: "Swift Flying Unicorn",
     type: "unicorn",
     image: "swift_flying_unicorn",
     count: 1,
@@ -1153,13 +839,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may add a Neigh card from the discard pile to your hand. If this card is sacrificed or destroyed, return it to your hand.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Neighkarte aus dem Friedhof deiner Hand hinzufügen. 👼 Wenn diese Karte geopfert oder zerstört wird, kommt sie stattdessen auf deine Hand zurück.",
-    },
+    description:
+      "When this card enters your Stable, you may add a Neigh card from the discard pile to your hand. If this card is sacrificed or destroyed, return it to your hand.",
   },
   {
-    title: "The Great Narwhal",
+    name: "The Great Narwhal",
     type: "narwhal",
     image: "the_great_narwhal",
     count: 1,
@@ -1192,13 +876,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, you may search the deck for a card with Narwhal in its name and add it to your hand, then shuffle the deck.",
-      de: "Wenn diese Karte deinen Stall betritt, darfst du eine Narwhalkarte aus dem Deck deiner Hand hinzufügen.",
-    },
+    description:
+      "When this card enters your Stable, you may search the deck for a card with Narwhal in its name and add it to your hand, then shuffle the deck.",
   },
   {
-    title: "Unicorn on the Cob",
+    name: "Unicorn on the Cob",
     type: "unicorn",
     image: "unicorn_on_the_cob",
     count: 1,
@@ -1240,33 +922,27 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "When this card enters your Stable, DRAW 2 cards and DISCARD a card.",
-      de: "Wenn diese Karte deinen Stall betritt, ziehe zwei Karten und werfe eine Karte von deiner Hand ab.",
-    },
+    description:
+      "When this card enters your Stable, DRAW 2 cards and DISCARD a card.",
   },
   {
-    title: "Neigh",
+    name: "Neigh",
     type: "neigh",
     image: "neigh",
     count: 14,
-    description: {
-      en: "Play this card when another player tries to play a card. Stop their card from being played and send it to the discard pile.",
-      de: "Neigh die Karte eines Spielers. Die Karte hat dann keinen Effekt mehr und wird auf den Friedhof gelegt.",
-    },
+    description:
+      "Play this card when another player tries to play a card. Stop their card from being played and send it to the discard pile.",
   },
   {
-    title: "Super Neigh",
+    name: "Super Neigh",
     type: "super_neigh",
     image: "super_neigh",
     count: 1,
-    description: {
-      en: "Play this card when another player tries to play a card. Stop their card from being played and send it to the discard pile. This card cannot be Neigh'd.",
-      de: "Neigh die Karte eines Spielers. Die Karte hat dann keinen Effekt mehr und wird auf den Friedhof gelegt. Diese Karte kann nicht geneight werden.",
-    },
+    description:
+      "Play this card when another player tries to play a card. Stop their card from being played and send it to the discard pile. This card cannot be Neigh'd.",
   },
   {
-    title: "Yay",
+    name: "Yay",
     type: "upgrade",
     image: "yay",
     count: 2,
@@ -1280,13 +956,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Cards you play cannot be Neigh'd.",
-      de: "Deine Karten können nicht geneight werden.",
-    },
+    description: "Cards you play cannot be Neigh'd.",
   },
   {
-    title: "Stable Artillery",
+    name: "Stable Artillery",
     type: "upgrade",
     image: "stable_artillery",
     count: 3,
@@ -1331,13 +1004,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DISCARD 2 cards, then DESTROY a Unicorn card.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du zwei Karten von deiner Hand abwerfen, um ein Einhorn zu zerstören.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DISCARD 2 cards, then DESTROY a Unicorn card.",
   },
   {
-    title: "Rainbow Lasso",
+    name: "Rainbow Lasso",
     type: "upgrade",
     image: "rainbow_lasso",
     count: 1,
@@ -1382,13 +1053,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DISCARD 3 cards, then STEAL a Unicorn card.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du drei Karten von deiner Hand abwerfen, um ein Einhorn zu stehlen.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DISCARD 3 cards, then STEAL a Unicorn card.",
   },
   {
-    title: "Rainbow Aura",
+    name: "Rainbow Aura",
     type: "upgrade",
     image: "rainbow_aura",
     count: 1,
@@ -1402,13 +1071,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Your Unicorn cards cannot be destroyed.",
-      de: "Deine Einhörner können nicht zerstört werden",
-    },
+    description: "Your Unicorn cards cannot be destroyed.",
   },
   {
-    title: "Glitter Bomb",
+    name: "Glitter Bomb",
     type: "upgrade",
     image: "glitter_bomb",
     count: 2,
@@ -1450,28 +1116,28 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may SACRIFICE a card, then DESTROY a card.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du eine Karte opfern. Zerstöre dann eine Karte.",
-    },
-  } /*{
-    title: "Nanny Cam",
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may SACRIFICE a card, then DESTROY a card.",
+  },
+  {
+    name: "Nanny Cam",
     type: "downgrade",
     image: "nanny_cam",
     count: 1,
-    on: [{
+    on: [
+      {
         trigger: "enter",
         do: {
-            type: "add_effect",
-            info: { key: "your_hand_is_visible" },
-            ui: { type: "none" }
-        }
-    }],
-    description: {
-        en: "Your hand must be visible to all players."
-}*/,
+          type: "add_effect",
+          info: { key: "your_hand_is_visible" },
+          ui: { type: "none" },
+        },
+      },
+    ],
+    description: "Your hand must be visible to all players.",
+  },
   {
-    title: "Double Dutch",
+    name: "Double Dutch",
     type: "upgrade",
     image: "double_dutch",
     count: 1,
@@ -1485,13 +1151,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may play 2 cards during your Action phase.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du zwei Karten während deiner Aktionsphase spielen.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may play 2 cards during your Action phase.",
   },
   {
-    title: "Claw Machine",
+    name: "Claw Machine",
     type: "upgrade",
     image: "claw_machine",
     count: 3,
@@ -1538,13 +1202,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may DISCARD a card, then DRAW a card.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du eine Karte abwerfen. Du darfst dann eine Karte ziehen.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may DISCARD a card, then DRAW a card.",
   },
   {
-    title: "Caffeine Overload",
+    name: "Caffeine Overload",
     type: "upgrade",
     image: "caffeine_overload",
     count: 1,
@@ -1586,13 +1248,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If this card is in your Stable at the beginning of your turn, you may SACRIFICE a card, then DRAW 2 cards.",
-      de: "Wenn diese Karte am Anfang deiner Runde in deinem Stall ist, darfst du eine Karte opfern, um zwei Karten zu ziehen.",
-    },
+    description:
+      "If this card is in your Stable at the beginning of your turn, you may SACRIFICE a card, then DRAW 2 cards.",
   },
   {
-    title: "Barbed Wire",
+    name: "Barbed Wire",
     type: "downgrade",
     image: "barbed_wire",
     count: 1,
@@ -1628,13 +1288,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Each time a Unicorn card enters or leaves your Stable, DISCARD a card.",
-      de: "Immer wenn ein Einhorn dein Stall betritt oder verlässt, musst du eine Karte abwerfen.",
-    },
+    description:
+      "Each time a Unicorn card enters or leaves your Stable, DISCARD a card.",
   },
   {
-    title: "Blinding Light",
+    name: "Blinding Light",
     type: "downgrade",
     image: "blinding_light",
     count: 1,
@@ -1648,13 +1306,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "All of your Unicorn cards are considered Basic Unicorns with no effects.",
-      de: "Alle deiner Einhörner haben keinen Effekt und gelten als Basiceinhörner.",
-    },
+    description:
+      "All of your Unicorn cards are considered Basic Unicorns with no effects.",
   },
   {
-    title: "Broken Stable",
+    name: "Broken Stable",
     type: "downgrade",
     image: "broken_stable",
     count: 1,
@@ -1668,13 +1324,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "You cannot play Upgrade cards.",
-      de: "Du kannst keine Upgradekarten spielen",
-    },
+    description: "You cannot play Upgrade cards.",
   },
   {
-    title: "Pandamonium",
+    name: "Pandamonium",
     type: "downgrade",
     image: "pandamonium",
     count: 1,
@@ -1688,13 +1341,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "All of your Unicorns are considered Pandas. Cards that affect Unicorn cards do not affect your Pandas.",
-      de: "All deine Einhörner gelten als Pandas. Karten, die Einhörner betreffen, betreffen nicht deine Pandas.",
-    },
+    description:
+      "All of your Unicorns are considered Pandas. Cards that affect Unicorn cards do not affect your Pandas.",
   },
   {
-    title: "Slowdown",
+    name: "Slowdown",
     type: "downgrade",
     image: "slowdown",
     count: 1,
@@ -1708,13 +1359,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "You cannot play Neigh cards.",
-      de: "Du kannst keine Neighkarten spielen",
-    },
+    description: "You cannot play Neigh cards.",
   },
   {
-    title: "Tiny Stable",
+    name: "Tiny Stable",
     type: "downgrade",
     image: "tiny_stable",
     count: 1,
@@ -1728,13 +1376,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "If at any time you have more than 5 Unicorns in your Stable, SACRIFICE a Unicorn card.",
-      de: "Wenn dein Stall mehr als 5 Einhörner umfasst, opfere ein Einhorn.",
-    },
+    description:
+      "If at any time you have more than 5 Unicorns in your Stable, SACRIFICE a Unicorn card.",
   },
   {
-    title: "Unicorn Poison",
+    name: "Unicorn Poison",
     type: "magic",
     image: "unicorn_poison",
     count: 3,
@@ -1763,13 +1409,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "DESTROY a Unicorn card.",
-      de: "Zerstöre ein Einhorn",
-    },
+    description: "DESTROY a Unicorn card.",
   },
   {
-    title: "Alignment Change",
+    name: "Alignment Change",
     type: "magic",
     image: "alignment_change",
     count: 2,
@@ -1810,13 +1453,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "DISCARD 2 cards, then STEAL a Unicorn card.",
-      de: "Werfe zwei Handkarten ab, und zerstöre ein Einhorn",
-    },
+    description: "DISCARD 2 cards, then STEAL a Unicorn card.",
   },
   {
-    title: "Unfair Bargain",
+    name: "Unfair Bargain",
     type: "magic",
     image: "unfair_bargain",
     count: 2,
@@ -1845,13 +1485,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Trade hands with any other player.",
-      de: "Tausche deine Handkarte mit jemandem.",
-    },
+    description: "Trade hands with any other player.",
   },
   {
-    title: "Two-For-One",
+    name: "Two-For-One",
     type: "magic",
     image: "two-for-one",
     count: 2,
@@ -1893,13 +1530,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "SACRIFICE a card, then DESTROY 2 cards.",
-      de: "Opfere eine Karte und zerstöre zwei Karten.",
-    },
+    description: "SACRIFICE a card, then DESTROY 2 cards.",
   },
   {
-    title: "Targeted Destruction",
+    name: "Targeted Destruction",
     type: "magic",
     image: "targeted_destruction",
     count: 1,
@@ -1929,13 +1563,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "DESTROY an Upgrade card or SACRIFICE a Downgrade card.",
-      de: "Zerstöre eine Upgradekarte oder opfere eine Downgradekarte.",
-    },
+    description: "DESTROY an Upgrade card or SACRIFICE a Downgrade card.",
   },
   {
-    title: "Shake Up",
+    name: "Shake Up",
     type: "magic",
     image: "shake_up",
     count: 1,
@@ -1967,13 +1598,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Shuffle this card, your hand, and the discard pile into the deck. DRAW 5 cards.",
-      de: "Lege deine Hand und diese Karte und den Friedhof in das Deck. Mische das Deck. Zeihe 5 Karten.",
-    },
+    description:
+      "Shuffle this card, your hand, and the discard pile into the deck. DRAW 5 cards.",
   },
   {
-    title: "Reset Button",
+    name: "Reset Button",
     type: "magic",
     image: "reset_button",
     count: 1,
@@ -2005,13 +1634,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Each player (including you) must SACRIFICE all Upgrade and Downgrade cards in their Stable. Shuffle the discard pile into the deck.",
-      de: "Jeder Spieler (auch du) muss alle Upgrade und Downgradekarten opfern. Mische den Friedhof in das Deck.",
-    },
+    description:
+      "Each player (including you) must SACRIFICE all Upgrade and Downgrade cards in their Stable. Shuffle the discard pile into the deck.",
   },
   {
-    title: "Mystical Vortex",
+    name: "Mystical Vortex",
     type: "magic",
     image: "mystical_vortex",
     count: 1,
@@ -2055,13 +1682,11 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Each player (including you) must DISCARD a card. Shuffle the discard pile into the deck.",
-      de: "Jeder Spieler (auch du) muss eine Handkarte abwerfen. Mische den Friedhof in das Deck",
-    },
+    description:
+      "Each player (including you) must DISCARD a card. Shuffle the discard pile into the deck.",
   },
   {
-    title: "Kiss of Life",
+    name: "Kiss of Life",
     type: "magic",
     image: "kiss_of_life",
     count: 1,
@@ -2094,13 +1719,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Bring a Unicorn card from the discard pile into your Stable.",
-      de: "Belebe ein Einhorn von dem Friedhof wieder und lege das Einhorn in deinen Stall.",
-    },
+    description: "Bring a Unicorn card from the discard pile into your Stable.",
   },
   {
-    title: "Good Deal",
+    name: "Good Deal",
     type: "magic",
     image: "good_deal",
     count: 1,
@@ -2142,13 +1764,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "DRAW 3 cards and DISCARD a card.",
-      de: "Ziehe 3 Karten und werfe eine Handkarte ab.",
-    },
+    description: "DRAW 3 cards and DISCARD a card.",
   },
   {
-    title: "Change of Luck",
+    name: "Change of Luck",
     type: "magic",
     image: "change_of_luck",
     count: 2,
@@ -2190,13 +1809,10 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "DRAW 2 cards and DISCARD 3 cards, then take another turn.",
-      de: "Ziehe zwei Karten und werfe 3 Handkarten ab. Du kannst dann einen erneuten Zug machen.",
-    },
+    description: "DRAW 2 cards and DISCARD 3 cards, then take another turn.",
   },
   {
-    title: "Back Kick",
+    name: "Back Kick",
     type: "magic",
     image: "back_kick",
     count: 3,
@@ -2225,97 +1841,64 @@ export const Cards = [
         },
       },
     ],
-    description: {
-      en: "Return a card in another player's Stable to their hand. That player must DISCARD a card.",
-      de: "Schicke eine Karte zurück auf die Hand des Besitzers. Der Besitzer muss eine Karte abwerfen.",
-    },
+    description:
+      "Return a card in another player's Stable to their hand. That player must DISCARD a card.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic0",
     count: 3,
-    on: [],
-    description: {
-      en: "Beards are like, so hot.",
-      de: "Bärte sind soooo heiß.",
-    },
+    description: "Beards are like, so hot.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic1",
     count: 3,
-    on: [],
-    description: {
-      en: "Pumpkin spice is the pumpkin spice of life.",
-      de: "Kürbisse sind lecker",
-    },
+    description: "Pumpkin spice is the pumpkin spice of life.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic2",
     count: 3,
-    on: [],
-    description: {
-      en: "Dance like nobody's watching.",
-      de: "Tanze als würde niemand zuschauen.",
-    },
+    description: "Dance like nobody's watching.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic3",
     count: 3,
-    on: [],
-    description: {
-      en: "Vinyl records and mixtapes only.",
-      de: "Oldschoooool musik",
-    },
+    description: "Vinyl records and mixtapes only.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic4",
     count: 3,
-    on: [],
-    description: {
-      en: "Popped collars are for date nights only.",
-      de: "Kragen trägt man nur auf Dates",
-    },
+    description: "Popped collars are for date nights only.",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic5",
     count: 3,
-    on: [],
-    description: {
-      en: "💖🙌💅🙌💖💁💁😂😂😂",
-      de: "💖🙌💅🙌💖💁💁😂😂😂",
-    },
+    description: "💖🙌💅🙌💖💁💁😂😂😂",
   },
   {
-    title: "Basic Unicorn",
+    name: "Basic Unicorn",
     type: "basic",
     image: "basic6",
     count: 3,
-    on: [],
-    description: {
-      en: "#nomakeup #nofilter #sunnies #shameless #selfie #basic #TGIF # unicornhairdontcare",
-      de: "#nomakeup #nofilter #sonne #schamlos #selfie #basic #TGIF # unicornhairdontcare",
-    },
+    description:
+      "#nomakeup #nofilter #sunnies #shameless #selfie #basic #TGIF # unicornhairdontcare",
   },
   {
-    title: "Narwhal",
+    name: "Narwhal",
     type: "basic",
     image: "basic7",
     count: 3,
-    on: [],
-    description: {
-      en: "This card has no special powers, but it sure is cute!",
-      de: "Diese Karte hat keine Kräft, aber süß ist sie!",
-    },
+    description: "This card has no special powers, but it sure is cute!",
   },
 ];

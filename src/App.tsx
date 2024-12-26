@@ -2,7 +2,7 @@ import { Client } from "boardgame.io/react";
 import { type Game } from "boardgame.io";
 import { Local } from "boardgame.io/multiplayer";
 import { Board } from "./Board";
-import { UnstableUnicornsGame } from "./game";
+import { UnstableUnicornsGame } from "./game/game";
 
 const Game = Client({
   game: UnstableUnicornsGame,

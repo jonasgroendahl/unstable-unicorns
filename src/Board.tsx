@@ -1,7 +1,11 @@
 import { BoardProps } from "boardgame.io/react";
 import React from "react";
-import { GameState, Moves } from "./game-types";
-import { useInterval } from "usehooks-ts";
+import { GameState, Moves } from "./types/game-types";
+import { PlayerHand } from "./BoardComponents/PlayerHand";
+import { DiscardPile } from "./BoardComponents/DiscardPile";
+import { Deck } from "./BoardComponents/Deck";
+import { getCurrentPlayerStage } from "./game/helper";
+import { NeighStatus } from "./BoardComponents/NeighStatus";
 
 interface BoardCompProps extends BoardProps<GameState> {
   moves: Moves;
@@ -15,24 +19,8 @@ export const Board: React.FC<BoardCompProps> = ({
 }) => {
   const gameover = ctx.gameover as undefined | { winner: string };
 
-  const currentPlayerId = playerID ?? ctx.currentPlayer;
-
-  useInterval(
-    () => {
-      console.log("checking neigh decision every 3 seconds...");
-
-      const latestNeighDecision = G.neighDecision?.[G.neighDecision.length - 1];
-
-      if (Object.values(latestNeighDecision).length === G.players.length) {
-        moves.endNeigh();
-      }
-    },
-    // Delay in milliseconds or null to stop it
-    ctx.activePlayers &&
-      Object.values(ctx.activePlayers).every((state) => state === "neighPhase")
-      ? 3000
-      : null
-  );
+  const currentPlayer = G.players.find((player) => player.id === playerID);
+  const otherPlayers = G.players.filter((player) => player.id !== playerID);
 
   if (!playerID) {
     return (
@@ -48,109 +36,85 @@ export const Board: React.FC<BoardCompProps> = ({
     );
   }
 
-  console.log("playerID", playerID);
+  console.log("playerID", playerID, gameover);
 
   return (
-    <div>
-      <p>
-        {ctx.phase} {ctx.activePlayers?.[ctx.currentPlayer]}
-      </p>
-      <p>playerID: {playerID}</p>
-      <p>Current player: {ctx.currentPlayer}</p>
-      <p>Deck: {G.deck.length}</p>
-      <p>Draw pile: {G.drawPile.length}</p>
-      <p>Hand: {G.hands[ctx.currentPlayer].join(", ")}</p>
-      <p>Winner: {gameover?.winner}</p>
-      <p>Hand</p>
-      <div style={{ display: "flex" }}>
-        {G.hands[currentPlayerId].map((card, i) => (
-          <div
-            key={`player_hand_${i}`}
-            style={{ display: "flex", flexDirection: "column" }}
-          >
-            <img
-              src={`/card/square/${G.deck[Number(card)].image}.png`}
-              height={100}
-              width={100}
-              style={{ objectFit: "cover" }}
+    <div className="h-screen w-screen flex flex-col items-center justify-center">
+      <div className="grid">
+        {/* Top row */}
+        <div className="player-hand col-span-3">
+          {otherPlayers.slice(0, 3).map((player, index) => (
+            <PlayerHand
+              key={`hand_${index}_${player.id}`}
+              player={player}
+              ctx={ctx}
+              moves={moves}
+              G={G}
+              playerID={playerID}
             />
-            <button onClick={() => moves.playCard(card)}>play</button>
-          </div>
-        ))}
-      </div>
-      <p>Stable:</p>
-      <div style={{ display: "flex" }}>
-        {G.stables[currentPlayerId].map((stableCard, i) => (
-          <div
-            key={`player_stable_${i}`}
-            style={{ display: "flex", flexDirection: "column" }}
-          >
-            <img
-              src={`/card/square/${G.deck[Number(stableCard)].image}.png`}
-              height={100}
-              width={100}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-        ))}
-      </div>
-      <button
-        onClick={() => {
-          moves.skip();
-        }}
-      >
-        Skip
-      </button>
-      <button
-        onClick={() => {
-          moves.drawCard();
-        }}
-      >
-        Draw card
-      </button>
-      <button
-        onClick={() => {
-          moves.discardCard(G.hands[ctx.currentPlayer][0]);
-        }}
-      >
-        Discard card
-      </button>
-      <button
-        onClick={() => {
-          moves.endNeigh();
-        }}
-      >
-        end neigh
-      </button>
-      <div>
-        {G.neighDecision?.[G.neighDecision.length - 1]?.[playerID] !==
-          undefined && (
-          <div>
-            <p>Neigh status:</p>
-            <p>
-              {G.neighDecision?.[G.neighDecision.length - 1]?.[playerID]
-                ? "neighed... :)"
-                : "didnt neigh"}
-            </p>
-          </div>
-        )}
-        <button onClick={() => moves.makeNeighDecision(true)}>Neigh</button>
-        <button onClick={() => moves.makeNeighDecision(false)}>
-          Dont Neigh
-        </button>
-      </div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex" }}>
-          {G.players
-            .filter((player) => player.id !== playerID)
-            .map((player, index) => (
-              <div key={`${player.id}_stb_${index}`}>
-                <p>Player: {player.id}</p>
-                <p>Hand: {G.hands[player.id].join(", ")}</p>
-                <p>Stable: {G.stables[player.id].join(", ")}</p>
-              </div>
-            ))}
+          ))}
         </div>
+
+        {/* Middle row */}
+        <div className="player-hand col-span-1">
+          {otherPlayers[3] && (
+            <PlayerHand
+              key={`hand_3_${otherPlayers[3].id}`}
+              player={otherPlayers[3]}
+              ctx={ctx}
+              moves={moves}
+              G={G}
+              playerID={playerID}
+            />
+          )}
+        </div>
+        <div>
+          <div className="center gap-2 flex mb-1">
+            <DiscardPile G={G} ctx={ctx} moves={moves} playerID={playerID} />
+            <Deck G={G} ctx={ctx} moves={moves} playerID={playerID} />
+            <p className="ml-4">{getCurrentPlayerStage(ctx)}</p>
+          </div>
+          <NeighStatus moves={moves} G={G} ctx={ctx} />
+        </div>
+        <div className="player-hand col-span-1">
+          {otherPlayers[4] && (
+            <PlayerHand
+              key={`hand_4_${otherPlayers[4].id}`}
+              player={otherPlayers[4]}
+              ctx={ctx}
+              moves={moves}
+              G={G}
+              playerID={playerID}
+            />
+          )}
+        </div>
+
+        {/* Bottom row */}
+        <div className="player-hand col-span-3">
+          {otherPlayers.slice(5, 7).map((player, index) => (
+            <PlayerHand
+              key={`hand_${index + 5}_${player.id}`}
+              player={player}
+              ctx={ctx}
+              moves={moves}
+              G={G}
+              playerID={playerID}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Current player's hand at the bottom */}
+      <div className="absolute-bottom">
+        {currentPlayer && (
+          <PlayerHand
+            player={currentPlayer}
+            ctx={ctx}
+            moves={moves}
+            G={G}
+            playerID={playerID}
+          />
+        )}
       </div>
     </div>
   );
