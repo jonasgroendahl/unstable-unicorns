@@ -94,6 +94,15 @@ export const Hand: React.FC<IHandProps> = ({
                   choose
                 </button>
               )}
+              {playerID === player.id &&
+                currentPlayerStage === "discardOverflowingCards" && (
+                  <button
+                    className="bg-red-100 p-1 rounded-sm"
+                    onClick={() => moves.discardCard(card)}
+                  >
+                    discard
+                  </button>
+                )}
             </div>
           );
         })}
